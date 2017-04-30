@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>Coilett Industries
-		<meta charset="utf-8">
-		<title>Coilett Industries</title>
-	</head>
-	<body>
-		<h1>Home Page</h1>
-		<p>The Home Page!!</p>
-	</body>
-</html>
+<html>
+  <head>
+    <title>Eric Collett's Assignments</title>
+    <link rel="stylesheet" type="text/css" href="project/homestyle.css">
 
-<?php
-	require("nav.php");
-?>
+  </head>
+  <body>
+    <h1>Eric Collett's 313 Assignments</h1>
+    
+    <ul id="menu">
+      <li><a href="project/assign1.php">CS 313 Work</a></li>
+      <br>
+      <li><a href="project/FullSite1.php">My Crazy Site</a></li>
+      <br>
+    </ul>
+    
+  </body>
+</html>
