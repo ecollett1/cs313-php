@@ -7,4 +7,4 @@
 	foreach ($_POST['continents'] as $check) {
 		echo "<strong>", $check, "</strong><br>";
 	}
-?>
+?> 
