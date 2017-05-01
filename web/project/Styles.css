@@ -1,0 +1,51 @@
+body {
+   font-family: "Times New Roman";
+   font-size: 14px;
+   background-color: skyblue;
+   margin-top: 35px;
+   margin-left: 35px;
+   margin-right: 35px;
+   margin-bottom: 35px;
+   text-align: left;
+   direction: ltr;
+}
+
+title {
+   font-size: 20px;
+   text-align: center; 
+}
+            
+h1 {
+   color: black;
+   text-align: center;
+}
+
+main {
+   background-color: white;
+   
+}
+#large {
+   font-size: 25px;
+   font-family: "Times New Roman";
+}
+
+.page2 {
+   background-color: #69DDFF;
+   font-family: "Times New Roman";
+}
+
+a:hover {
+   color: white;
+   font-size: 125%;
+}
+
+p {
+   background: #69DDFF;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+p.important {
+   color: red;
+   font-size: 16px;
+}
