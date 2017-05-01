@@ -5,6 +5,6 @@
 	echo "Continents Visited: <br>";
 
 	foreach ($_POST['continents'] as $check) {
-		echo $check, "<br>";
+		echo "<strong>", $check, "</strong><br>";
 	}
 ?>
