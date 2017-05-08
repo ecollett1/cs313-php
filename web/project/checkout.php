@@ -23,7 +23,7 @@
         <br>
       <input type="text" name="State" value="ID" pattern="[A-Z]{2}"> 2 Letter State </input>
         <br>
-      <input type="text" name="zip" value="01234"pattern="[0-9]{5,9}"> Zip Code </input>
+      <input type="text" name="zip" value="01234" pattern="[0-9]{5,9}"> Zip Code </input>
       <br>
       <input type="submit" name="submit4" id="submit4" value="Confirm Purchase">
     </form>
