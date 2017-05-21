@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
-  <body id="mainContainer" class="fade-out">
+  <body id="mainContainer" class="fade">
     <main>
       <?php
         require("header.php");
