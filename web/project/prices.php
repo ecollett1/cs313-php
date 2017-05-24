@@ -38,23 +38,10 @@
 
         echo "<br>";
 
-        foreach ($db->query("SELECT * FROM session WHERE id = 1") as $row) {
-            echo "<p class=\"center\">Newborns: " . $row['cost'] . "<br>";
-        }
-        foreach ($db->query("SELECT * FROM session WHERE id = 2") as $row) {
-            echo "<p class=\"center\">Family: " . $row['cost'] . "<br>";
-        }
-        foreach ($db->query("SELECT * FROM session WHERE id = 3") as $row) {
-            echo "<p class=\"center\">Wedding: " . $row['cost'] . "<br>";
-        }
-        foreach ($db->query("SELECT * FROM session WHERE id = 4") as $row) {
-            echo "<p class=\"center\">Engagements: " . $row['cost'] . "<br>";
-        }
-        foreach ($db->query("SELECT * FROM session WHERE id = 5") as $row) {
-            echo "<p class=\"center\">Newborn and Family: " . $row['cost'] . '<br>';
-        }
-        foreach ($db->query("SELECT * FROM session WHERE id = 6") as $row) {
-            echo "<p class=\"center\">Animal: " . $row['cost'] . "<br>";
+        $type = Array('Newborns', 'Family', 'Wedding', 'Engagements', 'Newborn and Family', 'Animal');
+        
+        foreach ($db->query("SELECT * FROM session") as $index => $row) {
+          echo '<p class="center">' . $type[$index] . ': ' . $row['cost'] . '</p><br />';
         }
         
         echo '<br></p>';
