@@ -6,6 +6,7 @@
         <a id="headerlinks" href="prices.php">Prices</a>
         <a id="headerlinks" href="browse.php">CS 313 Work</a>
         <a id="headerlinks" href="contact.php">Contact Me</a>
+        <a id="headerlinks" href="login.php">Login</a>
       </li>
     </ul>
     <hr>
