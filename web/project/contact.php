@@ -17,20 +17,20 @@
       <h2> Contact Me </h2>
       <?php
         try {
-          // $dbURL = getenv('DATABASE_URL');
-          // $dbopts = parse_url($dbURL);
+          $dbURL = getenv('DATABASE_URL');
+          $dbopts = parse_url($dbURL);
 
-          // $dbHost = $dbopts["host"];
-          // $dbPort = $dbopts["port"];
-          // $dbUser = $dbopts["user"];
-          // $dbPassword = $dbopts["pass"];
-          // $dbName = ltrim($dbopts["path"],'/');
+          $dbHost = $dbopts["host"];
+          $dbPort = $dbopts["port"];
+          $dbUser = $dbopts["user"];
+          $dbPassword = $dbopts["pass"];
+          $dbName = ltrim($dbopts["path"],'/');
 
-          // $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+          $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
           
-          $user = 'postgres';
-          $password = 'sh0m0mm@';
-          $db = new PDO('pgsql:host=127.0.0.1;dbname=photography', $user, $password);
+          // $user = 'postgres';
+          // $password = 'sh0m0mm@';
+          // $db = new PDO('pgsql:host=127.0.0.1;dbname=photography', $user, $password);
         }
         catch (PDOException $ex) {
           echo 'Error: ' . $ex->getMessage();
