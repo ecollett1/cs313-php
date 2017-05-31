@@ -16,7 +16,7 @@
 	        require("header.php");
 	    ?>
 		<h2>Login</h2>
-		<form action="account.php" method="post">
+		<form action="accountcreate.php" method="post">
 			<label for="email">Email:</label><input type="text" name="email" id="email" required>
 			<br>
 			<label for="password">Password:</label><input type="password" name="password" id="password" required>
