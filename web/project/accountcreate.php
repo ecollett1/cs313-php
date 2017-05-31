@@ -27,7 +27,7 @@
 
           $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
           
-          $query = "INSERT INTO customer(firstname, lastname, phone, email, address, password, admin) VALUES (:fname, :lname, :phone, :email, :address, :password, 0)";
+          $query = "INSERT INTO customer(firstname, lastname, phone, email, address, password, admin) VALUES (:fname, :lname, :phone, :email, :address, :password, false)";
           $statement = $db->prepare($query);
           $statement->bindValue(':fname', $fname, PDO::PARAM_STR);
           $statement->bindValue(':lname', $lname, PDO::PARAM_STR);
