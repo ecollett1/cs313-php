@@ -1,26 +1,3 @@
-<?php
-  try {
-    $dbURL = getenv('DATABASE_URL');
-    $dbopts = parse_url($dbURL);
-
-    $dbHost = $dbopts["host"];
-    $dbPort = $dbopts["port"];
-    $dbUser = $dbopts["user"];
-    $dbPassword = $dbopts["pass"];
-    $dbName = ltrim($dbopts["path"],'/');
-
-    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-    $query = "SELECT * FROM photos";
-
-    $stmt = $db->prepare($query);
-    $stmt->execute();
-    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-  }
-  catch (PDOException $ex) {
-    echo 'Error: ' . $ex->getMessage();
-    die();
-  }
-?>
 <DOCTYPE html>
 <html>
   <head>
@@ -36,18 +13,16 @@
         require("header.php");
       ?>
       <table border="0">
-      <tr>
-          <?php
-            $newRow = 0;
-            foreach ($results as $row) {
-              echo "<th><a href=\"" . $row['link_name'] . "\"><img id=\"images\" src=\"" . $row['link_name'] . "\"></a></th>";
-              $newRow += 1;
-              if ($newRow == 4) {
-                echo "</tr><tr>";
-                $newRow = 0;
-              }
-            }
-          ?>
+        <tr>
+          <th>Family Pictures<a href="photosfamily.php"><img src="13.jpg"></a></th>
+          <th>Engagements<a href="photosengage.php"><img src="7.JPG"></a></th>
+        </tr>
+        <tr>
+          <th>Wedding Pictures <a href="photoswedding.php"><img src="11.JPG"></a></th>
+          <th>Animal Pictures <a href="photosanimal.php"><img src="5.JPG"></a></th>
+        </tr>
+        <tr>
+          <th>Newborn Pictures <a href="photosnewborn.php"><img src="2.JPG"></a></th>
         </tr>
       </table>
       <br>
