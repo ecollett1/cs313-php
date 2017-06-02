@@ -12,7 +12,7 @@
       <?php
         require("header.php");
       ?>
-      <table border="0">
+      <table border="0" width="100%">
         <tr>
           <th>Family</th>
           <th>Engagements</th>
