@@ -96,8 +96,9 @@ span {
 }
 
 #gallery {
-  max-width: 100px;
-  max-height: 100px;
+  float: left;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 @-webkit-keyframes fade{
