@@ -95,7 +95,7 @@ span {
   animation-duration: 2s;
 }
 
-.gallery {
+#gallery {
   max-width: 100px;
   max-height: 100px;
 }
