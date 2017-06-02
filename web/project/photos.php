@@ -21,11 +21,11 @@
           <th>Newborn</th>
         </tr>
         <tr>
-          <td><a href="photosfamily.php"><img src="13.jpg"></a></td>
-          <td><a href="photosengage.php"><img src="7.JPG"></a></td>
-          <td><a href="photoswedding.php"><img src="11.JPG"></a></td>
-          <td><a href="photosanimal.php"><img src="5.JPG"></a></td>
-          <td><a href="photosnewborn.php"><img src="2.JPG"></a></td>
+          <td id="gallery" class="gallery"><a href="photosfamily.php"><img src="13.jpg"></a></td>
+          <td id="gallery" class="gallery"><a href="photosengage.php"><img src="7.JPG"></a></td>
+          <td id="gallery" class="gallery"><a href="photoswedding.php"><img src="11.JPG"></a></td>
+          <td id="gallery" class="gallery"><a href="photosanimal.php"><img src="5.JPG"></a></td>
+          <td id="gallery" class="gallery"><a href="photosnewborn.php"><img src="2.JPG"></a></td>
         </tr>
       </table>
       <br>
