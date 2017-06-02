@@ -24,9 +24,8 @@
 			<input type="submit" name="submit" value="Login">
 		</form>
 		<h3>New here?</h3>
-		<p>Create account here:</p>
 		<form action="createaccount.php" method="post">
-			<input type="submit" name="create" value="Create Account">
+			<p>Create account here:</p><input type="submit" name="create" value="Create Account">
 		</form>
 	</main>
 </body>
