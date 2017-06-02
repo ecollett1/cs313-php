@@ -14,15 +14,18 @@
       ?>
       <table border="0">
         <tr>
-          <th>Family Pictures<a href="photosfamily.php"><img src="13.jpg"></a></th>
-          <th>Engagements<a href="photosengage.php"><img src="7.JPG"></a></th>
+          <th>Family</th>
+          <th>Engagements</th>
+          <th>Wedding</th>
+          <th>Animals</th>
+          <th>Newborn</th>
         </tr>
         <tr>
-          <th>Wedding Pictures <a href="photoswedding.php"><img src="11.JPG"></a></th>
-          <th>Animal Pictures <a href="photosanimal.php"><img src="5.JPG"></a></th>
-        </tr>
-        <tr>
-          <th>Newborn Pictures <a href="photosnewborn.php"><img src="2.JPG"></a></th>
+          <td><a href="photosfamily.php"><img src="13.jpg"></a></td>
+          <td><a href="photosengage.php"><img src="7.JPG"></a></td>
+          <td><a href="photoswedding.php"><img src="11.JPG"></a></td>
+          <td><a href="photosanimal.php"><img src="5.JPG"></a></td>
+          <td><a href="photosnewborn.php"><img src="2.JPG"></a></td>
         </tr>
       </table>
       <br>
