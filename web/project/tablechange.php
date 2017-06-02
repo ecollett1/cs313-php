@@ -1,8 +1,7 @@
 <?php
-	$fname = htmlspecialchars($_POST['firstName']);
-	$lname = htmlspecialchars($_POST['lastName']);
-	$email = htmlspecialchars($_POST['email']);
-	$phone = htmlspecialchars($_POST['phone']);
+	$fname = htmlspecialchars($_POST['fname']);
+	$lname = htmlspecialchars($_POST['lname']);
+	$phone = htmlspecialchars($_POST['phonenum']);
 	$address = htmlspecialchars($_POST['address']);
 
 	try {
