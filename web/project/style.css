@@ -96,7 +96,6 @@ span {
 }
 
 #gallery {
-  float: left;
   max-width: 150px;
   max-height: 150px;
 }
