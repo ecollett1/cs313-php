@@ -10,11 +10,11 @@
     $dbName = ltrim($dbopts["path"],'/');
 
     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-    $query = "SELECT link_name FROM photos";
+    $query = "SELECT * FROM photos";
 
     $db->prepare($query);
     $db->execute();
-    $results = $db->fetchAll(PDO::FETCH_ASSOC);
+    $db->fetchAll(PDO::FETCH_ASSOC);
   }
   catch (PDOException $ex) {
     echo 'Error: ' . $ex->getMessage();
@@ -37,7 +37,7 @@
       ?>
       <ul>
       <?php
-        foreach ($results as $row) {
+        foreach ($db as $row) {
           echo $row;
         }
       ?>
