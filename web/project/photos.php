@@ -38,7 +38,7 @@
       <ul>
       <?php
         foreach ($results as $row) {
-          echo "<li><p>" . $row['link_name'] . "</p></li>";
+          echo "<a href=\"" . $row['link_name'] . "\"><img src=\"" . $row['link_name'] . "\"></a>";
         }
       ?>
       </ul>
