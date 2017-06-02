@@ -38,7 +38,7 @@
       <div id="pictures">
         <?php
           foreach ($results as $row) {
-            echo "<a href=\"" . $row['link_name'] . "\"><img id=\"images\" src=\"" . $row['link_name'] . "\"></a>";
+            echo "<a href=\"" . $row['link_name'] . "\"><img id=\"images\" src=\"" . $row['link_name'] . "\"></a><br>";
           }
         ?>
       </div>
