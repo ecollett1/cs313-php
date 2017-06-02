@@ -100,6 +100,11 @@ span {
   max-height: 250px;
 }
 
+#galleryfull {
+  max-width: 400px;
+  max-height: 400px;
+}
+
 @-webkit-keyframes fade{
   from {opacity: .2;}
   to {opacity: 1;}

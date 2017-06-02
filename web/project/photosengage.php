@@ -35,14 +35,14 @@
       <?php
         require("header.php");
       ?>
-      <table border="0">
+      <table border="0" width="100%">
       <tr>
           <?php
             $newRow = 0;
             foreach ($results as $row) {
-              echo "<th><a href=\"" . $row['link_name'] . "\"><img id=\"gallery\" src=\"" . $row['link_name'] . "\"></a></th>";
+              echo "<th><a href=\"" . $row['link_name'] . "\"><img id=\"galleryfull\" src=\"" . $row['link_name'] . "\"></a></th>";
               $newRow += 1;
-              if ($newRow == 4) {
+              if ($newRow == 3) {
                 echo "</tr><tr>";
                 $newRow = 0;
               }
