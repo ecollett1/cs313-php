@@ -35,13 +35,13 @@
       <?php
         require("header.php");
       ?>
-      <ul>
-      <?php
-        foreach ($results as $row) {
-          echo "<a href=\"" . $row['link_name'] . "\"><img id=\"images\" src=\"" . $row['link_name'] . "\"></a>";
-        }
-      ?>
-      </ul>
+      <div id="pictures">
+        <?php
+          foreach ($results as $row) {
+            echo "<a href=\"" . $row['link_name'] . "\"><img id=\"images\" src=\"" . $row['link_name'] . "\"></a>";
+          }
+        ?>
+      </div>
       <br>
       <br>
     

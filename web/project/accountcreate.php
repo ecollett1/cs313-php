@@ -16,45 +16,42 @@
 	}
 
 	try {
-          $dbURL = getenv('DATABASE_URL');
-          $dbopts = parse_url($dbURL);
+        $dbURL = getenv('DATABASE_URL');
+        $dbopts = parse_url($dbURL);
 
-          $dbHost = $dbopts["host"];
-          $dbPort = $dbopts["port"];
-          $dbUser = $dbopts["user"];
-          $dbPassword = $dbopts["pass"];
-          $dbName = ltrim($dbopts["path"],'/');
+        $dbHost = $dbopts["host"];
+        $dbPort = $dbopts["port"];
+        $dbUser = $dbopts["user"];
+        $dbPassword = $dbopts["pass"];
+        $dbName = ltrim($dbopts["path"],'/');
 
-          $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+        $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
           
-          $query = "INSERT INTO customer(firstname, lastname, phone, email, address, password, admin) VALUES (:fname, :lname, :phone, :email, :address, :password, false)";
-          $statement = $db->prepare($query);
-          $statement->bindValue(':fname', $fname, PDO::PARAM_STR);
-          $statement->bindValue(':lname', $lname, PDO::PARAM_STR);
-          $statement->bindValue(':phone', $phone, PDO::PARAM_STR);
-          $statement->bindValue(':email', $email, PDO::PARAM_STR);
-          $statement->bindValue(':address', $address, PDO::PARAM_STR);
-          $statement->bindValue(':password', $password, PDO::PARAM_STR);
-          $statement->execute();
+        $query = "INSERT INTO customer(firstname, lastname, phone, email, address, password, admin) VALUES (:fname, :lname, :phone, :email, :address, :password, false)";
+        $statement = $db->prepare($query);
+        $statement->bindValue(':fname', $fname, PDO::PARAM_STR);
+        $statement->bindValue(':lname', $lname, PDO::PARAM_STR);
+        $statement->bindValue(':phone', $phone, PDO::PARAM_STR);
+        $statement->bindValue(':email', $email, PDO::PARAM_STR);
+        $statement->bindValue(':address', $address, PDO::PARAM_STR);
+        $statement->bindValue(':password', $password, PDO::PARAM_STR);
+        $statement->execute();
 
-          if ($statement->rowCount()) {
-          	echo "Success!";
-          	header("Location: callitphotography.php");
-          	die();
-          }
-          else {
-          	echo "Failure...";
-          	header("Location: createaccount.php");
-          	die();
-          }
-          // $user = 'postgres';
-          // $password = 'sh0m0mm@';
-          // $db = new PDO('pgsql:host=127.0.0.1;dbname=photography', $user, $password);
-        }
-        catch (PDOException $ex) {
-          echo 'Error: ' . $ex->getMessage();
+        if ($statement->rowCount()) {
+          echo "Success!";
+          header("Location: callitphotography.php");
           die();
-        }
+         }
+         else {
+          echo "Failure...";
+          header("Location: createaccount.php");
+          die();
+         }
+    }
+    catch (PDOException $ex) {
+      echo 'Error: ' . $ex->getMessage();
+      die();
+    }
 
 
 ?>
