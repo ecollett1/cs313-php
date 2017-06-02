@@ -63,8 +63,8 @@ a {
 }
 
 a:hover {
-    color: gray;
-    text-decoration: underline;
+  color: gray;
+  text-decoration: underline;
 }
       
 .fade-out {
@@ -84,10 +84,6 @@ span {
     width: 100%;
 }
 
-#contactinfo {
-
-}
-
 .center {
   text-align: center;
 }
@@ -98,7 +94,12 @@ span {
   animation-name: fade;
   animation-duration: 2s;
 }
-      
+
+.gallery {
+  max-width: 100px;
+  max-height: 100px;
+}
+
 @-webkit-keyframes fade{
   from {opacity: .2;}
   to {opacity: 1;}
