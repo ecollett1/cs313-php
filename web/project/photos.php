@@ -35,7 +35,7 @@
         }
         
         foreach ($results as $row) {
-          echo "<a href=\"" . $row['link_name'] . "><img id=\"photographs\" src=\"" . $row['link_name'] . "></a><br>";
+          echo "<a href=\"" . $row . "><img id=\"photographs\" src=\"" . $row . "></a><br>";
         }
       ?>
       
