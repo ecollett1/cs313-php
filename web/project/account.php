@@ -11,14 +11,29 @@
 		header("Location: callitphotography.php");
 		die();
 	}
-	elseif ($username != "admin") {
-		header("Location: callitphotography.php");
-		die();
+
+	try {
+        $dbURL = getenv('DATABASE_URL');
+        $dbopts = parse_url($dbURL);
+
+        $dbHost = $dbopts["host"];
+        $dbPort = $dbopts["port"];
+        $dbUser = $dbopts["user"];
+        $dbPassword = $dbopts["pass"];
+        $dbName = ltrim($dbopts["path"],'/');
+
+        $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+        $query = "SELECT * FROM customer WHERE email = :username";
+        $statement = $db->prepare($query);
+        $statement->bindValue(':username', $username, PDO::PARAM_STR);
+        $statement->execute();
+
 	}
-	elseif ($password != "theraininspain") {
-		header("Location: callitphotography.php");
-		die();
-	}
+    catch (PDOException $ex) {
+        echo 'Error: ' . $ex->getMessage();
+        die();
+    }
+          
 ?>
 
 <!DOCTYPE html>
@@ -37,17 +52,15 @@
 	    ?>
 	    <h2>Change Your Information</h2>
 	    <form action="tablechange.php" method="post">
-	    	<input type="text" name="firstName" value=""> First Name</input>
-	    	<br>
-	    	<input type="text" name="lastName" value=""> Last Name</input>
-	    	<br>
-	    	<input type="text" name="phone" value="phone"> Phone
-	    	<br>
-	    	<input type="email" name="email"> Email
-	    	<br>
-	    	<input type="text" name="address"> Address
-	    	<br>
-	    	<input type="submit" name="submit" value="Submit">
+	    	<label for="fname">First Name:</label><input type="text" name="fname" id="fname" required>
+			<br>
+			<label for="lname">Last Name:</label><input type="text" name="lname" id="lname">
+			<br>
+			<label for="phonenum">Phone Number:</label><input type="text" name="phonenum" id="phonenum" required>
+			<br>
+			<label for="address">Address:</label><input type="text" name="address" id="address">
+			<br>
+			<input type="submit" name="submit" value="Submit">
 	    </form>
     </main>
   </body>

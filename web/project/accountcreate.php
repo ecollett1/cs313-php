@@ -39,9 +39,13 @@
 
           if ($statement->rowCount()) {
           	echo "Success!";
+          	header("Location: callitphotography.php");
+          	die();
           }
           else {
           	echo "Failure...";
+          	header("Location: createaccount.php");
+          	die();
           }
           // $user = 'postgres';
           // $password = 'sh0m0mm@';
