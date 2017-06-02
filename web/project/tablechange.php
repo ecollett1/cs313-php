@@ -1,8 +1,11 @@
 <?php
+	session_start();
+
 	$fname = htmlspecialchars($_POST['fname']);
 	$lname = htmlspecialchars($_POST['lname']);
 	$phone = htmlspecialchars($_POST['phonenum']);
 	$address = htmlspecialchars($_POST['address']);
+	$email = $_SESSION['email'];
 
 	try {
 		$dbURL = getenv('DATABASE_URL');
@@ -23,30 +26,35 @@
     }
 
 	if (!empty($fname)) {
-		$query1 = "UPDATE customer SET firstname = :fname WHERE id = 1";
+		$query1 = "UPDATE customer SET firstname = :fname WHERE email = :email";
 		$statement1 = $db->prepare($query1);
     	$statement1->bindValue(':fname', $fname, PDO::PARAM_STR);
+    	$statement1->bindValue(':email', $email, PDO::PARAM_STR);
     	$statement1->execute();
 	}
 
 	if (!empty($lname)) {
-		$query2 = "UPDATE customer SET lastname = :lname WHERE id = 1";
+		$query2 = "UPDATE customer SET lastname = :lname WHERE email = :email";
 		$statement2 = $db->prepare($query2);
     	$statement2->bindValue(":lname", $lname, PDO::PARAM_STR);
+    	$statement2->bindValue(':email', $email, PDO::PARAM_STR);
     	$statement2->execute();
 	}
 
 	if (!empty($phone)) {
-		$query4 = "UPDATE customer SET phone = :phone WHERE id = 1";
-		$statement4 = $db->prepare($query4);
-    	$statement4->bindValue(":phone", $phone, PDO::PARAM_STR);
-    	$statement4->execute();
+		$query3 = "UPDATE customer SET phone = :phone WHERE email = :email";
+		$statement3 = $db->prepare($query3);
+    	$statement3->bindValue(":phone", $phone, PDO::PARAM_STR);
+    	$statement3->bindValue(':email', $email, PDO::PARAM_STR);
+    	$statement3->execute();
 	}
+
 	if (!empty($address)) {
-		$query5 = "UPDATE customer SET address = :address WHERE id = 1";
-		$statement5 = $db->prepare($query5);
-    	$statement5->bindValue(":address", $address, PDO::PARAM_STR);
-    	$statement5->execute();
+		$query4 = "UPDATE customer SET address = :address WHERE email = :email";
+		$statement4 = $db->prepare($query4);
+    	$statement4->bindValue(":address", $address, PDO::PARAM_STR);
+    	$statement4->bindValue(':email', $email, PDO::PARAM_STR);
+    	$statement4->execute();
 	}
 
 	header("Location: contact.php");

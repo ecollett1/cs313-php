@@ -3,6 +3,8 @@
 	$username = htmlspecialchars($_POST['username']);
 	$password = htmlspecialchars($_POST['password']);
 
+	$_SESSION["email"] = $username;
+
 	if (empty($username)) {
 		header("Location: callitphotography.php");
 		die();
