@@ -38,8 +38,14 @@
       <table border="0">
       <tr>
           <?php
+            $newRow = 0;
             foreach ($results as $row) {
               echo "<th><a href=\"" . $row['link_name'] . "\"><img id=\"images\" src=\"" . $row['link_name'] . "\"></a></th>";
+              $newRow += 1;
+              if ($newRow == 4) {
+                echo "</tr><tr>";
+                $newRow = 0;
+              }
             }
           ?>
         </tr>
