@@ -25,7 +25,7 @@
 		</form>
 		<h3>New here?</h3>
 		<form action="createaccount.php" method="post">
-			<p>Create account here:</p><input type="submit" name="create" value="Create Account">
+			<span>Create account here: <input type="submit" name="create" value="Create Account"></span>
 		</form>
 	</main>
 </body>
