@@ -23,6 +23,9 @@
 			<br>
 			<input type="submit" name="submit" value="Login">
 		</form>
+		<form action="createaccount.php" method="post">
+			<input type="submit" name="create" value="Create Account">
+		</form>
 	</main>
 </body>
 </html>
