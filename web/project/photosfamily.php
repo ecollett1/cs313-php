@@ -40,7 +40,7 @@
           <?php
             $newRow = 0;
             foreach ($results as $row) {
-              echo "<th><a href=\"" . $row['link_name'] . "\"><img id=\"images\" src=\"" . $row['link_name'] . "\"></a></th>";
+              echo "<th><a href=\"" . $row['link_name'] . "\"><img id=\"gallery\" src=\"" . $row['link_name'] . "\"></a></th>";
               $newRow += 1;
               if ($newRow == 4) {
                 echo "</tr><tr>";
