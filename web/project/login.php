@@ -17,9 +17,9 @@
 	    ?>
 		<h2>Login</h2>
 		<form action="account.php" method="post">
-			<label for="username">Username:</label><input type="text" name="username" id="username" class="center">
+			<label for="username" class="center">Username:</label><input type="text" name="username" id="username" class="center">
 			<br>
-			<label for="password">Password:</label><input type="password" name="password" id="password" class="center">
+			<label for="password" class="center">Password:</label><input type="password" name="password" id="password" class="center">
 			<br>
 			<input type="submit" name="submit" value="Login" class="center">
 		</form>
