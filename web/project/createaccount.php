@@ -17,21 +17,21 @@
 	    ?>
 		<h2>Login</h2>
 		<form action="accountcreate.php" method="post">
-			<label for="email">Email:</label><input type="text" name="email" id="email" required>
+			<span class="center"><label for="email">Email:</label><input type="text" name="email" id="email" required></span>
 			<br>
-			<label for="password">Password:</label><input type="password" name="password" id="password" required>
+			<span class="center"><label for="password">Password:</label><input type="password" name="password" id="password" required></span>
 			<br>
-			<label for="confirmpassword">Confirm:</label><input type="password" name="confirmpassword" id="confirmpassword" required>
+			<span class="center"><label for="confirmpassword">Confirm:</label><input type="password" name="confirmpassword" id="confirmpassword" required></span>
 			<br>
-			<label for="fname">First Name:</label><input type="text" name="fname" id="fname" required>
+			<span class="center"><label for="fname">First Name:</label><input type="text" name="fname" id="fname" required></span>
 			<br>
-			<label for="lname">Last Name:</label><input type="text" name="lname" id="lname">
+			<span class="center"><label for="lname">Last Name:</label><input type="text" name="lname" id="lname"></span>
 			<br>
-			<label for="phonenum">Phone Number:</label><input type="text" name="phonenum" id="phonenum" required>
+			<span class="center"><label for="phonenum">Phone Number:</label><input type="text" name="phonenum" id="phonenum" required></span>
 			<br>
-			<label for="address">Address:</label><input type="text" name="address" id="address">
+			<span class="center"><label for="address">Address:</label><input type="text" name="address" id="address"></span>
 			<br>
-			<input type="submit" name="submit" value="Login">
+			<span class="center"><input type="submit" name="submit" value="Login"></span>
 		</form>
 	</main>
 </body>
