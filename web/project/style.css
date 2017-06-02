@@ -11,8 +11,16 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 p {
   padding-left: 15px;
+}
+
+input {
+  text-align: center;
 }
 
 #pictures {
