@@ -17,11 +17,11 @@
 	    ?>
 		<h2>Login</h2>
 		<form action="account.php" method="post">
-			<label for="username" class="center">Username:</label><input type="text" name="username" id="username" class="center">
+			<span class="center"><label for="username">Username:</label><input type="text" name="username" id="username"></span>
 			<br>
-			<label for="password" class="center">Password:</label><input type="password" name="password" id="password" class="center">
+			<span class="center"><label for="password">Password:</label><input type="password" name="password" id="password"></span>
 			<br>
-			<input type="submit" name="submit" value="Login" class="center">
+			<span class="center"><input type="submit" name="submit" value="Login"></span>
 		</form>
 		<h3>New here?</h3>
 		<form action="createaccount.php" method="post">
