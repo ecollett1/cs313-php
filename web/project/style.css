@@ -64,7 +64,7 @@ a {
       
 a:hover {
     color: gray;
-    text-underline: dash;
+    text-decoration: underline;
 }
       
 .fade-out {
