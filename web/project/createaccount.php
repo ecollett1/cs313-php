@@ -21,7 +21,7 @@
 			<br>
 			<span class="center"><label for="password">Password:</label><input type="password" name="password" id="password" required></span>
 			<br>
-			<span class="center"><label for="confirmpassword">Confirm:</label><input type="password" name="confirmpassword" id="confirmpassword" required></span>
+			<span class="center"><label for="confirmpassword">Confirm Password:</label><input type="password" name="confirmpassword" id="confirmpassword" required></span>
 			<br>
 			<span class="center"><label for="fname">First Name:</label><input type="text" name="fname" id="fname" required></span>
 			<br>
