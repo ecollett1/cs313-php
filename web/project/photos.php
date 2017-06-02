@@ -27,14 +27,15 @@
 
           $db->prepare($query);
           $db->execute();
+          $results = $db->fetchAll(PDO::FETCH_ASSOC);
         }
         catch (PDOException $ex) {
           echo 'Error: ' . $ex->getMessage();
           die();
         }
         
-        foreach ($db as $row) {
-          echo "<p id=\"contactinfo\" class=\"center\">" . $row['link_name'] . "</p>";
+        foreach ($results as $row) {
+          echo "<a href=\"$row['link_name']\"><img id=\"photographs\" src=\"$row['link_name']\"></a><br>";
         }
       ?>
       
