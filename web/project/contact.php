@@ -27,10 +27,6 @@
           $dbName = ltrim($dbopts["path"],'/');
 
           $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-          
-          // $user = 'postgres';
-          // $password = 'sh0m0mm@';
-          // $db = new PDO('pgsql:host=127.0.0.1;dbname=photography', $user, $password);
         }
         catch (PDOException $ex) {
           echo 'Error: ' . $ex->getMessage();
@@ -47,6 +43,7 @@
       ?>
       <br>
       <h3 class="center"> About Me </h3>
+      <p class="center">I'm married and am currently in college working on my major in Child Development.  I've been doing photography for over 5 years now on and off just for fun.  I enjoy being outside and love taking pictures, even though I don't get to do it as often as I'd like.  Feel free to contact me by text, call, or email.  I'll try to respond as quickly as possible!</p>
 
       
     </main>
