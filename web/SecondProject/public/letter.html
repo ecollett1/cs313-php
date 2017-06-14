@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Postage Place</title>
+</head>
+<body>
+	<h1>Find Your Postage Cost</h1>
+
+	<form action="/postage" method="get">
+		<input type="number" name="weight">
+		<br>
+		<select name="letterType">
+			<option name="stamped">Stamped Letter</option>
+			<option name="metered">Metered Letter</option>
+			<option name="flats">Large Envelopes</option>
+			<option name="parcels">Parcels</option>
+		</select>
+		<br>
+
+		<input type="submit" name="submit" value="Check Postage">
+	</form>
+</body>
+</html>
