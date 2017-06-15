@@ -25,7 +25,7 @@
           {
             
           echo ' 
-          <form id="contactMessage\" action="#" method="POST" enctype="multipart/form-data">
+          <form id="contactMessage" action="#" method="POST" enctype="multipart/form-data">
             <label for="name">Name:</label><br />
             <input id="name" class="input center" name="name" type="text" value="" size="30">
               <br>
