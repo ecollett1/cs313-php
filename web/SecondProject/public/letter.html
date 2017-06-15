@@ -7,13 +7,13 @@
 	<h1>Find Your Postage Cost</h1>
 
 	<form action="/postage" method="get">
-		<input type="number" name="weight">
+		<label>Enter Weight: </label><input type="number" name="weight">
 		<br>
-		<select name="letterType">
-			<option name="stamped">Stamped Letter</option>
-			<option name="metered">Metered Letter</option>
-			<option name="flats">Large Envelopes</option>
-			<option name="parcels">Parcels</option>
+		<label>Select Type: </label><select name="letterType">
+			<option value="stamped">Stamped Letter</option>
+			<option value="metered">Metered Letter</option>
+			<option value="flat">Large Envelopes</option>
+			<option value="parcel">Parcels</option>
 		</select>
 		<br>
 
