@@ -19,7 +19,7 @@
       <?php
       /* PHP code to send email provided graciously by https://www.123contactform.com/html-contact-form/ 
       All other PHP was made by the owner of this file (Eric Collett).*/
-        $action = $_POST['action'];
+        $action = $_REQUEST['action'];
         
         if ($action=="")    /* display the contact form */
             {
@@ -43,9 +43,9 @@
             } 
         else                /* send the submitted data */
             {
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $message = $_POST['message'];
+            $name = $_REQUEST['name'];
+            $email = $_REQUEST['email'];
+            $message = $_REQUEST['message'];
             if ($name == "" || $email == "" || $message == "")
                 {
                 echo "All fields are required, please fill <a href=\"\">the form</a> again.";
