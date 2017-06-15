@@ -59,10 +59,8 @@
         </div>
     </div>
     <br>
-    
-    <script rel="stylesheet" src="javascript.js">
-    </script>
 
     </main>
+    <script rel="stylesheet" type="text/javascript" src="javascript.js" defer></script>
   </body>
 </html>

@@ -21,7 +21,7 @@ app.get('/postage', function(req, res) {
 	var weight = req.query.weight;
 	var type = req.query.letterType;
 
-	postage.calculatePostage(weight, type, function(error, results) {
+	postage.calculateRate(weight, type, function(error, results) {
 		res.render("pages/results", results);
 	});
 });

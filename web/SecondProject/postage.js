@@ -1,4 +1,4 @@
-function calculatePostage(weight, type, callback) {
+function calculateRate(weight, type, callback) {
 	var weightPrice;
 	var numWeight = Number(weight);
 
