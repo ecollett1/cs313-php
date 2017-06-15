@@ -15,6 +15,18 @@
       <br>
       <br>
       <h2> Contact Me </h2>
+      <form id="contactMessage" action="#" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30">
+          <br>
+        <label for="email">Email:</label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30">
+          <br>
+        <label for="message">Message:</label><br />
+        <textarea id="message" class="input" name="message" rows="10" cols="40"></textarea>
+          <br>
+        <input id="submit_button" type="submit" value="Send email">
+      </form>    
       <?php
         try {
           $dbURL = getenv('DATABASE_URL');
