@@ -22,26 +22,22 @@
         $action = $_REQUEST['action'];
         
         if ($action=="")    /* display the contact form */
-            {
-            ?>
-
-      <form id="contactMessage" action="#" method="POST" enctype="multipart/form-data">
-        <div class="center">
-          <label for="name">Name:</label><br />
-          <input id="name" class="input" name="name" type="text" value="" size="30">
-            <br>
-          <label for="email">Email:</label><br />
-          <input id="email" class="input" name="email" type="text" value="" size="30">
-            <br>
-          <label for="message">Message:</label><br />
-          <textarea id="message" class="input" name="message" rows="10" cols="40"></textarea>
-            <br>
-          <input id="submit_button" type="submit" value="Send email">
-        </div>
-      </form>
-
-      <?php
-            } 
+          {
+            
+          echo ' 
+          <form id="contactMessage\" action="#" method="POST" enctype="multipart/form-data">
+            <label for="name">Name:</label><br />
+            <input id="name" class="input center" name="name" type="text" value="" size="30">
+              <br>
+            <label for="email">Email:</label><br />
+            <input id="email" class="input center" name="email" type="text" value="" size="30">
+              <br>
+            <label for="message">Message:</label><br />
+            <textarea id="message" class="input center" name="message" rows="10" cols="40"></textarea>
+              <br>
+            <input id="submit_button" class="center" type="submit" value="Send email">
+          </form> ';
+          } 
         else                /* send the submitted data */
             {
             $name = $_REQUEST['name'];
