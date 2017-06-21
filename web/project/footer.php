@@ -1,3 +1,4 @@
+<hr>
 <ul>
 	<li>
 		<p>Creator: Eric Collett</p>
