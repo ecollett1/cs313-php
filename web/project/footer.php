@@ -2,8 +2,8 @@
 <hr>
 <ul>
 	<li>
-		<p>Creator: Eric Collett</p>
 		<p>Owner: Emily Collett</p>
+		<p>Creator: Eric Collett</p>
 		<p>Contact Information:
 		<a href="mailto:someone@example.com">callitphotography@gmail.com</a>
 		<br>

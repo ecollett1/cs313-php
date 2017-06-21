@@ -49,5 +49,8 @@
       <br>
       <br>
     </main>
+    <?php
+      require("footer.php");
+    ?>
   </body>
 </html>

@@ -64,6 +64,9 @@
 			<br>
 			<input type="submit" name="submit" value="Submit">
 	    </form>
+	    <?php
+        	require("footer.php");
+      	?>
     </main>
   </body>
 </html>

@@ -33,6 +33,9 @@
 			<br>
 			<span class="center"><input type="submit" name="submit" value="Login"></span>
 		</form>
+		<?php
+        	require("footer.php");
+      	?>
 	</main>
 </body>
 </html>
