@@ -59,10 +59,11 @@
         </div>
     </div>
     <br>
+    
+    </main>
     <?php
         require("footer.php");
     ?>
-    </main>
     <script rel="stylesheet" type="text/javascript" src="javascript.js" defer></script>
       
   </body>
