@@ -62,7 +62,11 @@
       ?>
     </div>
     </main>
-
+    <div>
+      <?php
+        require("footer.php");
+      ?>
+    </div>
     <script rel="stylesheet" type="text/javascript" src="javascript.js" defer></script>
       
   </body>
