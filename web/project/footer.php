@@ -7,6 +7,6 @@
 		<p>Contact Information:
 		<a href="mailto:someone@example.com">callitphotography@gmail.com</a>
 		<br>
-		<a href="tel:9494663580">(949)466-3580</a>
+		<a href="tel:5092050586">(509)205-0586</a>
 	</li>
 </ul>
