@@ -14,6 +14,18 @@
     ?>
     <br>
     <br>
+	<div id="myModal" class="modal">
+	  <div class="modal-content">
+        <span class="close">&times;</span>
+        <input type="radio" name="choice" value="family">Family <br>
+		<input type="radio" name="choice" value="engagement">Engagements <br>
+		<input type="radio" name="choice" value="animal">Animal <br>
+		<input type="radio" name="choice" value="newborn">Newborn <br>
+		<input type="radio" name="choice" value="wedding">Wedding <br>
+
+    </div>
+
+</div>
     <div id="pictures">
       <div class="slides fade">
         <img id="images" src="1.JPG" alt="First Picture">
