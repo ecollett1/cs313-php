@@ -1,5 +1,6 @@
 <?php
 	session.start();
+	$_SESSION["user"] = null;
 ?>
 <!DOCTYPE html>
 <html>
