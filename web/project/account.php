@@ -12,7 +12,12 @@
 	elseif (empty($password)) {
 		header("Location: callitphotography.php");
 		die();
-	}
+	} 
+	elseif ($username == callitphotography@gmail.com && $password != "theraininspain") {
+		header("Location: callitphotography.php");
+		die();
+		}
+
 
 	try {
         $dbURL = getenv('DATABASE_URL');
