@@ -15,25 +15,6 @@
     <main>
     <?php
       require("header.php");
-	  
-	  if ($_SESSION["user"] == null) {
-		echo '<div id="myModal" class="modal">
-		<div class="modal-content">
-		  <span class="close">&times;</span>
-		  <form action="/authenticate.php" method="POST">
-			<input type="radio" name="pictures" value="family" />Family<br />
-			<input type="radio" name="pictures" value="engagement" />Engagements <br />
-			<input type="radio" name="pictures" value="animal" />Animal <br />
-			<input type="radio" name="pictures" value="newborn" />Newborn <br />
-			<input type="radio" name="pictures" value="wedding" />Wedding <br />
-			<input type="radio" name="pictures" value="guest" />Guest <br />
-			<input type="submit" value="Personalize" />
-		  </form>
-
-		</div>
-
-		</div>';
-	  }
     ?>
     <br>
     <br>
