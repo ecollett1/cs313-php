@@ -1,7 +1,7 @@
 <br>
 <hr>
-<ul>
-	<li>
+<ul class="center">
+	<li class="center">
 		<p>Owner: Emily Collett</p>
 		<p>Creator: Eric Collett</p>
 		<p>Contact Information:
