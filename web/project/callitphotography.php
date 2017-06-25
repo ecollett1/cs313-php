@@ -14,6 +14,8 @@
     ?>
     <br>
     <br>
+	<button id="myBtn">Open Modal</button>
+
 	<div id="myModal" class="modal">
 	  <div class="modal-content">
         <span class="close">&times;</span>
@@ -22,7 +24,6 @@
 		<input type="radio" name="choice" value="animal">Animal <br>
 		<input type="radio" name="choice" value="newborn">Newborn <br>
 		<input type="radio" name="choice" value="wedding">Wedding <br>
-
     </div>
 
 </div>
