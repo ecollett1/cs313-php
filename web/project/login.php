@@ -17,9 +17,9 @@
 	    ?>
 		<h2>Login</h2>
 		<form action="account.php" method="post">
-			<span class="center"><label for="username">Email: </label><input type="text" name="username" id="username"></span>
+			<span class="center"><label for="username">Email: </label><br><input type="text" name="username" id="username"></span>
 			<br>
-			<span class="center"><label for="password">Password: </label><input type="password" name="password" id="password"></span>
+			<span class="center"><label for="password">Password: </label><br><input type="password" name="password" id="password"></span>
 			<br>
 			<span class="center"><input type="submit" name="submit" value="Login"></span>
 		</form>
