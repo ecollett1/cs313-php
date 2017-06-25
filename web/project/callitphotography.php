@@ -5,7 +5,7 @@
 
     <title>Call It Photography</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+	<script rel="stylesheet" type="text/javascript" src="javascript.js"></script>
   </head>
   <body id="mainContainer" class="fade">
     <main>
@@ -75,7 +75,6 @@
       ?>
     </div>
     </main>
-    <script rel="stylesheet" type="text/javascript" src="javascript.js" defer></script>
       
   </body>
 </html>
