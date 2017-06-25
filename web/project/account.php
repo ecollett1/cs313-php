@@ -54,15 +54,15 @@
 	    ?>
 	    <h2>Change Your Information</h2>
 	    <form action="tablechange.php" method="post">
-	    	<label for="fname">First Name:</label><input type="text" name="fname" id="fname" required>
+	    	<span class="center"><label for="fname">First Name:</label><br><input type="text" name="fname" id="fname" required></span>
 			<br>
-			<label for="lname">Last Name:</label><input type="text" name="lname" id="lname">
+			<span class="center"><label for="lname">Last Name:</label><br><input type="text" name="lname" id="lname"></span>
 			<br>
-			<label for="phonenum">Phone Number:</label><input type="text" name="phonenum" id="phonenum" required>
+			<span class="center"><label for="phonenum">Phone Number:</label><br><input type="text" name="phonenum" id="phonenum" required></span>
 			<br>
-			<label for="address">Address:</label><input type="text" name="address" id="address">
+			<span class="center"><label for="address">Address:</label><br><input type="text" name="address" id="address"></span>
 			<br>
-			<input type="submit" name="submit" value="Submit">
+			<span class="center"><input type="submit" name="submit" value="Submit"></span>
 	    </form>
 	    <?php
         	require("footer.php");
