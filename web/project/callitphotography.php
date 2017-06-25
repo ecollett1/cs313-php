@@ -1,3 +1,6 @@
+<?php
+	session.start();
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -66,3 +69,7 @@
       
   </body>
 </html>
+
+<?php 
+	session.end();
+?>
