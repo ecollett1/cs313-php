@@ -1,6 +1,3 @@
-<?php
-	session.start();
-?>
 <!DOCTYPE html>
 <html>
   <head>
