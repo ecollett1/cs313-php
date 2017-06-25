@@ -13,7 +13,7 @@
 		header("Location: callitphotography.php");
 		die();
 	} 
-	elseif ($username == callitphotography@gmail.com && $password != "theraininspain") {
+	elseif ($username == "callitphotography@gmail.com" && $password != "theraininspain") {
 		header("Location: callitphotography.php");
 		die();
 		}
