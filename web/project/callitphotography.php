@@ -57,12 +57,13 @@
       <div class="slides fade">
         <img id="images" src="14.JPG" alt="14 Picture">
         </div>
+      <br /><br />
       <?php
         require("footer.php");
       ?>
     </div>
     </main>
     <script rel="stylesheet" type="text/javascript" src="javascript.js" defer></script>
-      
+
   </body>
 </html>
