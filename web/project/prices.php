@@ -57,7 +57,7 @@
         </tr>';
 
         foreach ($db->query("SELECT * FROM session") as $index => $row) {
-          echo '<tr><td class="center">' . $type[$index] . '</td><td class="center">' . $row['cost']
+          echo '<tr><td>' . $type[$index] . '</td><td class="center">' . $row['cost']
           . '</td><td class="center">' . $info[$index] . '</td></tr>';
         }
 
