@@ -59,7 +59,7 @@
 
         foreach ($db->query("SELECT * FROM session") as $index => $row) {
           echo '<tr><td>' . $type[$index] . '</td><td>' . $row['cost']
-          . '</td><td aligh="right">' . $info[$index] . '</td></tr>';
+          . '</td><td style="text-align: right;">' . $info[$index] . '</td></tr>';
         }
 
         echo '</table>';
