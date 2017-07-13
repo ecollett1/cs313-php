@@ -26,7 +26,7 @@
           $dbName = ltrim($dbopts["path"],'/');
 
           $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-          
+
           // $user = 'postgres';
           // $password = 'sh0m0mm@';
           // $db = new PDO('pgsql:host=127.0.0.1;dbname=photography', $user, $password);
@@ -39,12 +39,17 @@
         echo "<br>";
 
         $type = Array('Newborns', 'Family', 'Wedding', 'Engagements', 'Newborn and Family', 'Animal');
-        
+        echo '<table border="0" width="100%"><tr>
+        <th>Type</th>
+        <th>Cost</th>
+        <th>What You Pay for</th>
+        </tr>';
+
         foreach ($db->query("SELECT * FROM session") as $index => $row) {
-          echo '<p class="center">' . $type[$index] . ': ' . $row['cost'] . '</p><br />';
+          echo '<tr><td>' . $type[$index] . '</td><td>' . $row['cost'] . '</td><td>1 hour session + 30 edited photos</td></tr>';
         }
-        
-        echo '<br></p>';
+
+        echo '</table>';
       ?>
       <br>
       <br>
