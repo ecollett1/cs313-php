@@ -54,7 +54,7 @@
         echo '<table border="0" width="60%" align="center"><tr>
         <th align="left">Type</th>
         <th align="left">Cost</th>
-        <th align="right">What You Pay for</th>
+        <th align="left">What You Pay for</th>
         </tr>';
 
         foreach ($db->query("SELECT * FROM session") as $index => $row) {
