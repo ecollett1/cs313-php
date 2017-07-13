@@ -45,7 +45,7 @@
          '1 hour session + 30 edited photos',
          'Half hour session + 20 or more edited photos');
 
-        echo '<table border="0" width="75%"><tr>
+        echo '<table border="0" width="75%" class="center"><tr>
         <th>Type</th>
         <th>Cost</th>
         <th>What You Pay for</th>
