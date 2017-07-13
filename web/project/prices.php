@@ -39,6 +39,7 @@
         echo "<br>";
 
         $type = Array('Newborns', 'Family', 'Wedding', 'Engagements', 'Newborn and Family', 'Animal');
+        $info = Array('1 hour session + 30 edited photos', '1 hour session + 30 edited photos', '2 hour session + 40 edited photos', '1 hour session + 30 edited photos', 'Half hour session + 20 or more edited photos')
         echo '<table border="0" width="100%"><tr>
         <th>Type</th>
         <th>Cost</th>
@@ -46,7 +47,8 @@
         </tr>';
 
         foreach ($db->query("SELECT * FROM session") as $index => $row) {
-          echo '<tr><td>' . $type[$index] . '</td><td>' . $row['cost'] . '</td><td>1 hour session + 30 edited photos</td></tr>';
+          echo '<tr><td class="center">' . $type[$index] . '</td><td class="center">' . $row['cost']
+          . '</td><td class="center">' . $info[$index] . '</td></tr>';
         }
 
         echo '</table>';
