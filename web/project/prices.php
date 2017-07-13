@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
       th, td {
+        padding: 4px;
         border-bottom: 1px solid #ddd;
       }
     </style>
@@ -53,12 +54,12 @@
         echo '<table border="0" width="75%" align="center"><tr>
         <th align="left">Type</th>
         <th align="left">Cost</th>
-        <th align="left">What You Pay for</th>
+        <th align="right">What You Pay for</th>
         </tr>';
 
         foreach ($db->query("SELECT * FROM session") as $index => $row) {
           echo '<tr><td>' . $type[$index] . '</td><td>' . $row['cost']
-          . '</td><td>' . $info[$index] . '</td></tr>';
+          . '</td><td aligh="right">' . $info[$index] . '</td></tr>';
         }
 
         echo '</table>';
