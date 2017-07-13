@@ -5,7 +5,11 @@
 
     <title>Call It Photography</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <style>
+      th, td {
+        border-bottom: 1px solid #ddd;
+      }
+    </style>
   </head>
   <body id="mainContainer" class="fade">
     <main>
@@ -43,9 +47,10 @@
          '1 hour session + 30 edited photos',
          '2 hour session + 40 edited photos',
          '1 hour session + 30 edited photos',
+         '1 hour session + 30 edited photos',
          'Half hour session + 20 or more edited photos');
 
-        echo '<table border="0" width="75%" style="padding-left:50px; padding-right:50px;"><tr>
+        echo '<table border="0" width="75%"><tr>
         <th>Type</th>
         <th>Cost</th>
         <th>What You Pay for</th>
