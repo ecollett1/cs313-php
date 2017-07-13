@@ -52,13 +52,13 @@
 
         echo '<table border="0" width="75%" align="center"><tr>
         <th align="left">Type</th>
-        <th>Cost</th>
-        <th>What You Pay for</th>
+        <th align="left">Cost</th>
+        <th align="left">What You Pay for</th>
         </tr>';
 
         foreach ($db->query("SELECT * FROM session") as $index => $row) {
-          echo '<tr><td>' . $type[$index] . '</td><td class="center">' . $row['cost']
-          . '</td><td class="center">' . $info[$index] . '</td></tr>';
+          echo '<tr><td>' . $type[$index] . '</td><td>' . $row['cost']
+          . '</td><td>' . $info[$index] . '</td></tr>';
         }
 
         echo '</table>';
