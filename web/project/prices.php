@@ -51,7 +51,7 @@
          'Half hour session + 20 or more edited photos');
 
         echo '<table border="0" width="75%" align="center"><tr>
-        <th>Type</th>
+        <th align="left">Type</th>
         <th>Cost</th>
         <th>What You Pay for</th>
         </tr>';
