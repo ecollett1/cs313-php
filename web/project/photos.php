@@ -15,7 +15,7 @@
       <h2>Photos</h2>
       <table border="0" width="100%">
         <tr>
-          <th class="center"><a href="photosfamily.php">Family<br><img id="gallery" src="13.jpg"></a></th>
+          <th class="center"><a href="photosfamily.php" style="font-family: bookman;">Family<br><img id="gallery" src="13.jpg"></a></th>
           <th class="center"><a href="photosengage.php">Engagements<br><img id="gallery" src="7.JPG"></a></th>
           <th class="center"><a href="photoswedding.php">Wedding<br><img id="gallery" src="11.JPG"></a></th>
         </tr>
@@ -26,7 +26,7 @@
       </table>
       <br>
       <br>
-    
+
     </main>
     <?php
       require("footer.php");
