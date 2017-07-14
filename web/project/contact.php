@@ -81,7 +81,7 @@
           echo "<p id=\"contactinfo\" class=\"center\">" . $row['firstname'];
           echo ' ' . $row['lastname'];
           echo '<br><a href="tel:' . $row['phone'] . '">' . $row['phone'] . '</a>';
-          echo '<br><a href="' . $row['email'] . '">' . $row['email'] . '</a>';
+          echo '<br><a href="mailto:' . $row['email'] . '">' . $row['email'] . '</a>';
           echo '<br></p>';
         }
       ?>
