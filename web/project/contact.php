@@ -15,12 +15,12 @@
       <br>
       <br>
       <h2> Contact Me </h2>
-      
+
       <?php
-      /* PHP code to send email provided graciously by https://www.123contactform.com/html-contact-form/ 
+      /* PHP code to send email provided graciously by https://www.123contactform.com/html-contact-form/
       All other PHP was made by the owner of this file (Eric Collett).*/
         $action = $_REQUEST['action'];
-        
+
         if ($action=="")    /* display the contact form */
             {
             ?>
@@ -40,7 +40,7 @@
       </div>
 
       <?php
-            } 
+            }
         else                /* send the submitted data */
             {
             $name = $_REQUEST['name'];
@@ -50,13 +50,13 @@
                 {
                 echo "All fields are required, please fill <a href=\"\">the form</a> again.";
                 }
-            else{        
+            else{
                 $from = "From: $name<$email>\r\nReturn-path: $email";
                 $subject = "Message sent using your contact form";
                 mail("callitphotography@gmail.com", $subject, $message, $from);
                 echo "Email sent!";
                 }
-            }  
+            }
       ?>
 
       <?php
@@ -76,7 +76,7 @@
           echo 'Error: ' . $ex->getMessage();
           die();
         }
-        
+
         foreach ($db->query("SELECT * FROM customer WHERE id = 1") as $row) {
           echo "<p id=\"contactinfo\" class=\"center\">" . $row['firstname'];
           echo ' ' . $row['lastname'];
@@ -87,7 +87,7 @@
       ?>
       <br>
       <h3 class="center"> About Me </h3>
-      <p class="center">I'm married and am currently in college working on my major in Child Development.  I've been doing photography for over 5 years now on and off just for fun.  I enjoy being outside and love taking pictures, even though I don't get to do it as often as I'd like.  Feel free to contact me by text, call, or email.  I'll try to respond as quickly as possible!</p>
+      <p class="center"><img id="gallery" src="23.JPG">I'm married and am currently in college working on my major in Child Development.  I've been doing photography for over 5 years now on and off just for fun.  I enjoy being outside and love taking pictures, even though I don't get to do it as often as I'd like.  Feel free to contact me by text, call, or email.  I'll try to respond as quickly as possible!</p>
 
       <?php
         require("footer.php");
