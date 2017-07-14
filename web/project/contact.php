@@ -80,8 +80,8 @@
         foreach ($db->query("SELECT * FROM customer WHERE id = 1") as $row) {
           echo "<p id=\"contactinfo\" class=\"center\">" . $row['firstname'];
           echo ' ' . $row['lastname'];
-          echo '<br><a href="tel:5092050586">' . $row['phone'] . '</a>';
-          echo '<br>' . $row['email'];
+          echo '<br><a href="tel:' . $row['phone'] . '">' . $row['phone'] . '</a>';
+          echo '<br><a href="' . $row['email'] . '">' . $row['email'] . '</a>';
           echo '<br></p>';
         }
       ?>
