@@ -5,7 +5,11 @@
 
     <title>Call It Photography</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <style>
+      th, td {
+        padding: 8px;
+      }
+    </style>
   </head>
   <body id="mainContainer" class="fade">
     <main>
