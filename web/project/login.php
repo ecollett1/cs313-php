@@ -22,11 +22,11 @@
 			<br>
 			<span class="center"><label for="password">Password: </label><br><input type="password" name="password" id="password"></span>
 			<br>
-			<span class="center"><input type="submit" name="submit" value="Login"></span>
+            <span class="center"><button type="submit" name="submit">Login</button></span>
 		</form>
 		<h3>New here?</h3>
 		<form action="createaccount.php" method="post">
-			<span class="center">Create account here: <input type="submit" name="create" value="Create Account"></span>
+            <span class="center">Create account here: <button type="submit" name="create">Create Account</button></span>
 		</form>
 	</main>
 </body>

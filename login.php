@@ -6,8 +6,8 @@
 	</head>
 	<body>
 		<h1>Login</h1>
-		<a href="something">Login as Administrator</a>
-		<a href="something">Login as Tester</a>
+		<a href="javascript:void(0)">Login as Administrator</a>
+		<a href="javascript:void(0)">Login as Tester</a>
 	</body>
 </html>
 
