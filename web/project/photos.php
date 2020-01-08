@@ -17,17 +17,13 @@
         require("header.php");
       ?>
       <h2>Photos</h2>
-      <table border="0" width="90%">
-        <tr>
-          <th class="center"><a href="photosfamily.php">Family<br><img id="gallery" src="13.jpg"></a></th>
-          <th class="center"><a href="photosengage.php">Engagements<br><img id="gallery" src="7.JPG"></a></th>
-          <th class="center"><a href="photoswedding.php">Wedding<br><img id="gallery" src="29.jpg"></a></th>
-        </tr>
-        <tr>
-          <th class="center"><a href="photosanimal.php">Animals<br><img id="gallery" src="5.JPG"></a></th>
-          <th class="center"><a href="photosnewborn.php">Newborn<br><img id="gallery" src="2.JPG"></a></th>
-        </tr>
-      </table>
+      <div class="photo-main-container" border="0" width="90%">
+        <a href="photosfamily.php">Family<br><img id="gallery" src="13.jpg"></a>
+        <a href="photosengage.php">Engagements<br><img id="gallery" src="7.JPG"></a>
+        <a href="photoswedding.php">Wedding<br><img id="gallery" src="29.jpg"></a>
+        <a href="photosanimal.php">Animals<br><img id="gallery" src="5.JPG"></a>
+        <a href="photosnewborn.php">Newborn<br><img id="gallery" src="2.JPG"></a>
+      </div>
       <br>
       <br>
 

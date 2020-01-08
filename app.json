@@ -1,3 +1,4 @@
 {
-  "name": "CS 313 PHP Base Code"
+  "name": "CS 313 PHP Base Code",
+  "stack": "heroku-18"
 }
