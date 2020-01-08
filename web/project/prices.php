@@ -5,6 +5,7 @@
 
     <title>Call It Photography</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="Call it.PNG" />
     <style>
       th, td {
         padding: 4px;

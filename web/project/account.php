@@ -12,7 +12,7 @@
 	elseif (empty($password)) {
 		header("Location: callitphotography.php");
 		die();
-	} 
+	}
 	elseif ($username == "callitphotography@gmail.com" && $password != "theraininspain") {
 		header("Location: callitphotography.php");
 		die();
@@ -40,7 +40,7 @@
         echo 'Error: ' . $ex->getMessage();
         die();
     }
-          
+
 ?>
 
 <!DOCTYPE html>
@@ -50,6 +50,7 @@
 
     <title>Call It Photography</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="Call it.PNG" />
 
   </head>
   <body id="mainContainer" class="fade">

@@ -28,6 +28,7 @@
 
     <title>Call It Photography</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="Call it.PNG" />
 
   </head>
   <body id="mainContainer" class="fade">
@@ -52,7 +53,7 @@
       </table>
       <br>
       <br>
-    
+
     </main>
     <?php
       require("footer.php");
