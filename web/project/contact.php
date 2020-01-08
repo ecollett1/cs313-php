@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +36,7 @@
         <label for="message">Message:</label><br />
         <textarea id="message" class="input" name="message" rows="10" cols="40"></textarea>
           <br>
-        <input id="submit_button" class="" type="submit" value="Send email">
+        <button id="submit_button" type="submit">Send email</button>
       </form>
       </div>
 

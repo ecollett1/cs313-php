@@ -24,6 +24,23 @@ p {
 
 input {
   text-align: center;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 25px;
+}
+
+textarea {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+#submit_button {
+  padding: 5px;
+  font-size: 14px;
+  margin: 5px;
+  background-color: #d3d3d3ad;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3ad;
 }
 
 #pictures {
@@ -105,6 +122,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 #gallery {
