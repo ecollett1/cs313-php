@@ -67,9 +67,10 @@
       ?>
       <br>
       <br>
-    </main>
-    <?php
+      <?php
       require("footer.php");
-    ?>
+      ?>
+    </main>
+
   </body>
 </html>

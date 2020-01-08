@@ -59,10 +59,11 @@
         <img id="images" src="14.JPG" alt="14 Picture">
         </div>
       <br /><br />
-      <?php
-        require("footer.php");
-      ?>
+
     </div>
+    <?php
+      require("footer.php");
+    ?>
     </main>
     <script rel="stylesheet" type="text/javascript" src="javascript.js" defer></script>
 

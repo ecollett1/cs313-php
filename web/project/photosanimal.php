@@ -53,10 +53,9 @@
       </table>
       <br>
       <br>
-
+      <?php
+        require("footer.php");
+      ?>
     </main>
-    <?php
-      require("footer.php");
-    ?>
   </body>
 </html>
