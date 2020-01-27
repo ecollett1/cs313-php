@@ -51,12 +51,14 @@ textarea {
 }
 
 #headerlinks {
-  padding-right: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 ul {
   text-align: center;
   list-style-type: square;
+  padding-left: 0;
 }
 
 li {
